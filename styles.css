@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Evita barras de desplazamiento */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background: black; /* Fondo para resaltar el efecto Matrix */
+}
+
+canvas#matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Envía el canvas al fondo */
+}
+
+/* Container Styles */
+.container {
+    max-width: 600px;
+    width: 90%; /* Asegura que se ajuste en pantallas pequeñas */
+    max-height: 80vh; /* Limita la altura máxima al 90% de la ventana */
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es demasiado grande */
+    background: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Sombra más definida */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque para el fondo */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
+    text-align: center; /* Centra el contenido del texto */
+    color: white; /* Texto blanco para contraste */
+}
+
+.container h1 {
+    margin-bottom: 20px; /* Espaciado inferior para el título */
+    font-size: 1.8rem; /* Tamaño del título */
+    color: #0f0; /* Color verde para el título */
+}
+
+.container form {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos del formulario en columna */
+    gap: 15px; /* Espaciado entre los elementos */
+}
+
+.container input,
+.container button {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    width: 100%; /* Asegura que los inputs y botones ocupen todo el ancho */
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    color: white; /* Texto blanco */
+}
+
+.container input::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Placeholder más claro */
+}
+
+.container button {
+    background: #0f0; /* Botón verde */
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.container button:hover {
+    background: #0c0; /* Oscurece el botón al pasar el mouse */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+/* Resultados Styles */
+.resultados {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: left;
+}
