@@ -14,7 +14,7 @@ const fontSize = 16; // Tamaño de la fuente
 const columns = canvas.width / fontSize; // Número de columnas
 const drops = Array(Math.floor(columns)).fill(1); // Posición inicial de las gotas
 
-const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()*&^%'; // Caracteres estilo Matrix
+const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()*&^%caremondacarepolla'; // Caracteres estilo Matrix
 const charArray = characters.split('');
 
 function drawMatrix() {
