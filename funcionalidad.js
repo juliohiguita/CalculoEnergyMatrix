@@ -1,5 +1,5 @@
   // Definimos el costo por kWh 
-  const COSTO_POR_KWH =   909.75;
+  const COSTO_POR_KWH =    893.62;
 
   // Función para calcular el costo total del consumo de energía
   function calcularCosto(consumoKwh) {
